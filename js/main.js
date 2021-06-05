@@ -31,8 +31,8 @@ window.addEventListener("DOMContentLoaded" ,function () {
         for (const i in data) {
             if (data.hasOwnProperty(i)) {
                 const by = data[i].by;
-                const path = data[i].path;
-                illustrations += createIllustrationCard(by, path)
+                const fileName = data[i].filename;
+                illustrations += createIllustrationCard(by, fileName)
             }
         }
         $("#illustration-content").append(illustrations)
@@ -50,10 +50,10 @@ function createMessageCard(name, message) {
     '</div>\n'
 }
 
-function createIllustrationCard(by, path) {
+function createIllustrationCard(by, fileName) {
     return '<div class="col-6 text-center">\n' +
-        '    <a href="images/illustrations/'+ path +'">\n' +
-        '        <img src="images/illustrations/'+ path +'" alt="" style="width: 25rem">\n' +
+        '    <a href="images/illustrations/'+ fileName +'">\n' +
+        '        <img src="images/illustrations/'+ fileName +'" alt="" style="width: 25rem">\n' +
         '    </a>\n' +
         '    <p>'+ by +'作</p>\n' +
         '</div>\n'

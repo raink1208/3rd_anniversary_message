@@ -12,6 +12,7 @@ body {
 
 .card {
     margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .card-text {
