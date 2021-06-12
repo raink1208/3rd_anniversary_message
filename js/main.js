@@ -50,11 +50,21 @@ function createMessageCard(name, message) {
     '</div>\n'
 }
 
+//function createIllustrationCard(by, fileName) {
+//    return '<div class="col-6 text-center">\n' +
+//        '    <a href="images/illustrations/'+ fileName +'">\n' +
+//        '        <img class="" src="images/illustrations/'+ fileName +'" alt="">\n' +
+//        '    </a>\n' +
+//        '    <p>'+ by +'作</p>\n' +
+//        '</div>\n'
+//}
+
 function createIllustrationCard(by, fileName) {
-    return '<div class="col-6 text-center">\n' +
-        '    <a href="images/illustrations/'+ fileName +'">\n' +
-        '        <img src="images/illustrations/'+ fileName +'" alt="" style="width: 25rem">\n' +
-        '    </a>\n' +
-        '    <p>'+ by +'作</p>\n' +
-        '</div>\n'
+    return '<div class="card" style="width: 30rem">\n' +
+        '    <div class="card-img-top">\n' +
+        '        <a href="images/illustrations/'+ fileName +'">\n' +
+        '            <img class="card-img-top" src="images/illustrations/'+ fileName +'" alt="">\n' +
+        '        </a>\n' +
+        '    </div>\n' +
+        '</div>'
 }
