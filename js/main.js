@@ -30,9 +30,9 @@ window.addEventListener("DOMContentLoaded" ,function () {
 
         for (const i in data) {
             if (data.hasOwnProperty(i)) {
-                const by = data[i].by;
+                const illustrator = data[i].illustrator;
                 const fileName = data[i].filename;
-                illustrations += createIllustrationCard(by, fileName)
+                illustrations += createIllustrationCard(illustrator, fileName)
             }
         }
         $("#illustration-content").append(illustrations)
@@ -50,6 +50,10 @@ function createMessageCard(name, message) {
     '</div>\n'
 }
 
+function createIllustrationCard(Illustrator) {
+
+}
+
 //function createIllustrationCard(by, fileName) {
 //    return '<div class="col-6 text-center">\n' +
 //        '    <a href="images/illustrations/'+ fileName +'">\n' +
@@ -59,12 +63,12 @@ function createMessageCard(name, message) {
 //        '</div>\n'
 //}
 
-function createIllustrationCard(by, fileName) {
-    return '<div class="card" style="width: 30rem">\n' +
-        '    <div class="card-img-top">\n' +
-        '        <a href="images/illustrations/'+ fileName +'">\n' +
-        '            <img class="card-img-top" src="images/illustrations/'+ fileName +'" alt="">\n' +
-        '        </a>\n' +
-        '    </div>\n' +
-        '</div>'
-}
+//function createIllustrationCard(by, fileName) {
+//    return '<div class="card" style="width: 30rem">\n' +
+//        '    <div class="card-img-top">\n' +
+//        '        <a href="images/illustrations/'+ fileName +'">\n' +
+//        '            <img class="card-img-top" src="images/illustrations/'+ fileName +'" alt="">\n' +
+//        '        </a>\n' +
+//        '    </div>\n' +
+//        '</div>'
+//}
