@@ -50,8 +50,15 @@ function createMessageCard(name, message) {
     '</div>\n'
 }
 
-function createIllustrationCard(Illustrator) {
-
+function createIllustrationCard(Illustrator, fileName) {
+    return '<div class="card" style="width: 30rem">\n' +
+        '    <div class="card-img-top">\n' +
+        '        <a href="images/illustrations/'+ fileName +'">\n' +
+        '            <img class="card-img-top" src="images/illustrations/'+ fileName +'" alt="">\n' +
+        '        </a>\n' +
+        '    </div>\n' +
+        '    <p class="text-right">' + Illustrator + '作</p>\n' +
+        '</div>\n'
 }
 
 //function createIllustrationCard(by, fileName) {
