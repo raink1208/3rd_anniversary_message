@@ -60,22 +60,3 @@ function createIllustrationCard(Illustrator, fileName) {
         '    <p class="text-right">' + Illustrator + '作</p>\n' +
         '</div>\n'
 }
-
-//function createIllustrationCard(by, fileName) {
-//    return '<div class="col-6 text-center">\n' +
-//        '    <a href="images/illustrations/'+ fileName +'">\n' +
-//        '        <img class="" src="images/illustrations/'+ fileName +'" alt="">\n' +
-//        '    </a>\n' +
-//        '    <p>'+ by +'作</p>\n' +
-//        '</div>\n'
-//}
-
-//function createIllustrationCard(by, fileName) {
-//    return '<div class="card" style="width: 30rem">\n' +
-//        '    <div class="card-img-top">\n' +
-//        '        <a href="images/illustrations/'+ fileName +'">\n' +
-//        '            <img class="card-img-top" src="images/illustrations/'+ fileName +'" alt="">\n' +
-//        '        </a>\n' +
-//        '    </div>\n' +
-//        '</div>'
-//}
