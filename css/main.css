@@ -15,6 +15,34 @@ body {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
+.card-deco img {
+    width: 10px;
+    height: 10px;
+}
+
+.message-deco-top {
+    position: absolute;
+    top: 5px;
+    bottom: auto;
+    left: 5px;
+}
+
+.message-deco-bottom {
+    position: absolute;
+    top: auto;
+    bottom: 5px;
+}
+
+.left {
+    left: 5px;
+    right: unset;
+}
+
+.right {
+    right: 5px;
+    left: unset;
+}
+
 .card-text {
     font-size: 14pt;
 }
