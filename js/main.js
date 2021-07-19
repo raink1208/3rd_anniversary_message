@@ -30,41 +30,51 @@ window.addEventListener("DOMContentLoaded" ,function () {
 
         for (const i in data) {
             if (data.hasOwnProperty(i)) {
-                const by = data[i].by;
+                const illustrator = data[i].illustrator;
                 const fileName = data[i].filename;
-                illustrations += createIllustrationCard(by, fileName)
+                illustrations += createIllustrationCard(illustrator, fileName)
             }
         }
         $("#illustration-content").append(illustrations)
     });
 });
 
-function createMessageCard(name, message) {
-    return '<div class="card" style="width: 25rem">\n' +
-    '    <div class="card-body">\n' +
-    '        <p class="member">\n' +
-    '            <span class="name">'+ name +'<span>\n' +
-    '        </p>\n' +
-    '        <p class="card-text">'+ message +'</p>\n' +
-    '    </div>\n' +
-    '</div>\n'
-}
-
-//function createIllustrationCard(by, fileName) {
-//    return '<div class="col-6 text-center">\n' +
-//        '    <a href="images/illustrations/'+ fileName +'">\n' +
-//        '        <img class="" src="images/illustrations/'+ fileName +'" alt="">\n' +
-//        '    </a>\n' +
-//        '    <p>'+ by +'作</p>\n' +
-//        '</div>\n'
+//function createMessageCard(name, message) {
+//    return '<div class="card" style="width: 25rem">\n' +
+//    '<div class="card-deco"></div>\n' +
+//    '    <div class="card-body">\n' +
+//    '        <p class="member">\n' +
+//    '            <span class="name">'+ name +'</span>\n' +
+//    '        </p>\n' +
+//    '        <p class="card-text">'+ message +'</p>\n' +
+//    '    </div>\n' +
+//    '</div>\n'
 //}
 
-function createIllustrationCard(by, fileName) {
+function createMessageCard(name, message) {
+    return '<div class="card" style="width: 25rem">\n' +
+        '    <div class="card-deco">\n' +
+        '        <img src="images/miko_sakura.png" alt class="message-deco-top left">\n' +
+        '        <img src="images/miko_sakura.png" alt class="message-deco-top right">\n' +
+        '        <img src="images/miko_sakura.png" alt class="message-deco-bottom left">\n' +
+        '        <img src="images/miko_sakura.png" alt class="message-deco-bottom right">\n' +
+        '    </div>\n' +
+        '    <div class="card-body">\n' +
+        '        <p class="member">\n' +
+        '            <span class="name">'+ name +'</span>\n' +
+        '        </p>\n' +
+        '        <p class="card-text">'+ message +'</p>\n' +
+        '    </div>\n' +
+        '</div>'
+}
+
+function createIllustrationCard(Illustrator, fileName) {
     return '<div class="card" style="width: 30rem">\n' +
         '    <div class="card-img-top">\n' +
         '        <a href="images/illustrations/'+ fileName +'">\n' +
         '            <img class="card-img-top" src="images/illustrations/'+ fileName +'" alt="">\n' +
         '        </a>\n' +
         '    </div>\n' +
-        '</div>'
+        '    <p class="text-right">' + Illustrator + '作</p>\n' +
+        '</div>\n'
 }
