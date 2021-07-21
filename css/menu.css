@@ -83,7 +83,7 @@
 }
 
 .menu-content {
-    width: 35%;
+    width: 40%;
     height: 100%;
     position: fixed;
     top: 0;
@@ -94,5 +94,5 @@
 }
 
 #menu-btn-check:checked ~ .menu-content {
-    left: 65%/*メニューを画面内へ*/
+    left: 60%/*メニューを画面内へ*/
 }
