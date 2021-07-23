@@ -41,18 +41,6 @@ window.addEventListener("DOMContentLoaded" ,function () {
     });
 });
 
-//function createMessageCard(name, message) {
-//    return '<div class="card" style="width: 25rem">\n' +
-//    '<div class="card-deco"></div>\n' +
-//    '    <div class="card-body">\n' +
-//    '        <p class="member">\n' +
-//    '            <span class="name">'+ name +'</span>\n' +
-//    '        </p>\n' +
-//    '        <p class="card-text">'+ message +'</p>\n' +
-//    '    </div>\n' +
-//    '</div>\n'
-//}
-
 function createMessageCard(name, message) {
     return '<div class="card" style="width: 25rem">\n' +
         '    <div class="card-deco">\n' +
