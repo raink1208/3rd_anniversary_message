@@ -31,8 +31,10 @@ window.addEventListener("DOMContentLoaded" ,function () {
         for (const i in data) {
             if (data.hasOwnProperty(i)) {
                 const illustrator = data[i].illustrator;
-                const fileName = data[i].filename;
-                illustrations += createIllustrationCard(illustrator, fileName)
+                const title = data[i].title
+                const message = data[i].message
+                const filename = data[i].filename;
+                illustrations += createIllustrationCard(illustrator, title, message, filename)
             }
         }
         $("#illustration-content").append(illustrations)
@@ -68,13 +70,15 @@ function createMessageCard(name, message) {
         '</div>'
 }
 
-function createIllustrationCard(Illustrator, fileName) {
-    return '<div class="card" style="width: 30rem">\n' +
-        '    <div class="card-img-top">\n' +
-        '        <a href="images/illustrations/'+ fileName +'">\n' +
-        '            <img class="card-img-top" src="images/illustrations/'+ fileName +'" alt="">\n' +
-        '        </a>\n' +
+function createIllustrationCard(illustrator, title, message, filename) {
+    return '<div class="illustration h-25" style="width: 30rem">\n' +
+        '    <a href="images/illustrations/'+filename+'">\n' +
+        '        <img class="card-img-top" src="images/illustrations/'+filename+'" alt>\n' +
+        '    </a>\n' +
+        '    <div class="card-body">\n' +
+        '        <h4 class="card-title text-center">'+title+'</h4>\n' +
+        '        <p class="card-text">'+message+'</p>\n' +
+        '        <p class="illustrator text-right">'+illustrator+'</p>\n' +
         '    </div>\n' +
-        '    <p class="text-right">' + Illustrator + '作</p>\n' +
-        '</div>\n'
+        '</div>'
 }
