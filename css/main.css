@@ -76,6 +76,14 @@ body {
     animation: SlideIn 2.4s;
 }
 
+.special {
+    margin-top: 50px;
+}
+
+.notes {
+    margin-top: 20px;
+}
+
 @keyframes SlideIn {
     0% {
         opacity: 0;
