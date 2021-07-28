@@ -9,6 +9,13 @@ $(function () {
     });
 });
 
+document.addEventListener('click', (event) => {
+    if (event.target.classList.contains('menu-item')) {
+        let menuBtnCheck = document.getElementById("menu-btn-check");
+        menuBtnCheck.checked = false;
+    }
+});
+
 //cardの生成
 window.addEventListener("DOMContentLoaded" ,function () {
     $.getJSON("./data/messages.json", function (json) {
